@@ -1,0 +1,35 @@
+#cvwrapper {
+    max-width: 1160px;
+    margin: 100px auto;
+    display: flexbox;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#partie_gauche {
+  background-color: #e3e3e3;
+}
+
+#partiesup, #footer {
+    background-color: #17abb3;
+    justify-content: center;
+    align-items: center;
+}
+
+#partiedroite {
+    background-color: white;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+#footer {
+    display: flex;
+    
+}
+
+h2 {
+    color: #17abb3;
+}
