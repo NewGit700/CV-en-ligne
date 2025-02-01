@@ -12,82 +12,104 @@
     <title>Mon CV en HTML/CSS</title>
 </head>
 <body>
- <div id="cvwrapper">
-            <div id="partiesup">
-                    <img src="./ASSETS/pictures/alex.jpg">
+<div id="cvwrapper">
+  <header>
+          <div id="partiesup">
+            <div class="titres">
+                    <div id="photo">
+                      <img src="./ASSETS/pictures/alex.jpg">
+                    </div>
+                    <div id="infosperso">
                   <h1>Alex Le Grec</h1>
-                  <p>Développeur Web et Web Mobile</p>
+                  <p><strong>Développeur Web et Web Mobile</strong></p>
                   <ul class="infos">
                     <li><img src="./ASSETS/pictures/icons/mail.png"><a href="mailto:alex@legrec.com">Mail</a></li>
                     <li><img src="./ASSETS/pictures/icons/telephone-mobile.png"><a href="tel:0607080910">Téléphone</a></li>
                     <li><img src="ASSETS/pictures/icons/maison.png"></i>Adresse</li>
                     <li><img src="ASSETS/pictures/icons/voiture.png"></i>Permis B</li>
                   </ul>
+                   </div>
                 </div>
-            <div id="partie_gauche">
-               <h2>Compétences</h2>
-                 <div class="skills">
-                   <div class="star-rating">
-                    <label>HTML</label>
-              <input type="radio" name="star-rating" id="star1" value="1">
-              <input type="radio" name="star-rating" id="star2" value="2">
-              <input type="radio" name="star-rating" id="star3" value="3">
-              <input type="radio" name="star-rating" id="star4" value="4">
-              <input type="radio" name="star-rating" id="star5" value="5">
-                    </div>
-                  <div class="star-rating">
-                <label>CSS</label>
-                <input type="radio" name="star-rating" id="star1" value="1">
-                <input type="radio" name="star-rating" id="star2" value="2">
-                <input type="radio" name="star-rating" id="star3" value="3">
-                <input type="radio" name="star-rating" id="star4" value="4">
-                <input type="radio" name="star-rating" id="star5" value="5">
-                  </div>
-                   <div class="star-rating">
-                <label>Javascript</label>
-                <input type="radio" name="star-rating" id="star1" value="1">
-                <input type="radio" name="star-rating" id="star2" value="2">
-                <input type="radio" name="star-rating" id="star3" value="3">
-                <input type="radio" name="star-rating" id="star4" value="4">
-                <input type="radio" name="star-rating" id="star5" value="5">
-                  </div>
-                   <div class="star-rating">
-                <label>PHP</label>
-                <input type="radio" name="star-rating" id="star1" value="1">
-                <input type="radio" name="star-rating" id="star2" value="2">
-                <input type="radio" name="star-rating" id="star3" value="3">
-                <input type="radio" name="star-rating" id="star4" value="4">
-                <input type="radio" name="star-rating" id="star5" value="5">
-                  </div>
             </div>
-            <div class="section">
+          </header>
+      <div id="wrap">
+          <aside>
+           <div id="partie_gauche">
+             <article>
+              <h2>Compétences</h2>
+                    <div class="stars">
+                      <strong>HTML</strong>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9734</span>
+                    </div>
+                <div class="stars">
+                  <strong>CSS</strong>
+                  <span>&#9733</span>
+                  <span>&#9733</span>
+                  <span>&#9733</span>
+                  <span>&#9733</span>
+                  <span>&#9734</span>
+                      </div>
+                <div class="stars">
+                  <strong>Javascript</strong>
+                  <span>&#9733</span>
+                  <span>&#9733</span>
+                  <span>&#9734</span>
+                  <span>&#9734</span>
+                  <span>&#9734</span>
+                </div>               
+                <div class="stars">
+                  <strong>PHP</strong>
+                  <span>&#9733</span>
+                  <span>&#9734</span>
+                  <span>&#9734</span>
+                  <span>&#9734</span>
+                  <span>&#9734</span>
+                </div>
+              </article>
+              <article>
                 <h2>Langues</h2>
+                <hr>
                  <p>
-                  <strong>Français et Grec moderne</strong>   Langues maternelles
+                  <strong>Français</strong>   Langue maternelle
                    <br>
                   <strong>Anglais</strong>   Professionnel
                    <br>
                   <strong>Espagnol</strong>   Professionnel
                 </p>
-            </div>
-           <div class="section">
+              </article>
+              <article>
                <h2>Qualités</h2>
-                <ul>
-                  <li>Yoga</li>
-                  <li>Tennis</li>
-                  <li>Ecologie</li>
-           </div>
-           <div class="section">
+               <hr>
+               <div class="align">
+                <ul class="square">
+                  <li><span class="color">Esprit d'équipe</span></li>
+                  <li><span class="color">Autonomie</span></li>
+                  <li><span class="color">Organisation</span></li>
+                  <li><span class="color">Créativité</span></li>
+                </div>
+                </article>
+                <article>
                <h2>Centres d'intérêt</h2>
-                <ul>
-                 <li>Yoga</li>
-                 <li>Tennis</li>
-                 <li>Ecologie</li>
+               <hr>
+              <div class="align">
+                <ul class="square">
+                 <li><span class="color">Yoga</span></li>
+                 <li><span class="color">Tennis</span></li>
+                 <li><span class="color">Ecologie</span></li>
+              </div>
+                </article>
            </div>
-    <div id="partiedroite">
-        <div class="section">
-        <h2>Profil</h2>
-            <p>
+          </aside>
+            <section>
+              <div id="partiedroite">
+               <article>
+                 <h2>Profil</h2>
+                 <hr>
+                  <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Praesentium, illum voluptatibus culpa qui iure et enim rerum eligendi. 
               Odit voluptate harum enim assumenda quo, quia exercitationem unde 
@@ -96,68 +118,79 @@
               Praesentium, illum voluptatibus culpa qui iure et enim rerum eligendi. 
               Odit voluptate harum enim assumenda quo, quia exercitationem unde 
               quasi adipisci ducimus.
-            </p>
-          </div>
-          <div class="section">
+                 </p>
+             </article>
+           <article>
             <h2>Formations</h2>
-            <p>
-              <em>2024/2025</em>
+            <hr>
+            <ul>
+              <li class="form">
+                <span class="desc"><strong>Titre Professionnel DWWM</strong></span>
+                <span class="period">2023/2024</span>
+                <li><em>Centre Européen de Formation</em></li>
+              </li>
               <br>
-              <strong>Titre Professionnel DWWM</strong> 
-              <em>Centre Européen de formation</em>
-            </p>
-            <p>
-                <em>2024/2025</em>
-                <br>
-                <strong>Titre Professionnel DWWM</strong> 
-                <em>Centre Européen de formation</em>
-              </p>
-            <p>
-                <em>2024/2025</em>
-                <br>
-                <strong>Titre Professionnel DWWM</strong> 
-                <em>Centre Européen de formation</em>
-              </p>
-                      </div>
-          <div class="section">
+              <li class="form">
+                <span class="desc"><strong>Remise à Niveau - Métiers du numérique</strong></span>
+                <span class="period">Juin 2023 - Septembre 2023</span>
+                <li><em>Lycée de la Ville</em></li>
+              </li>
+              <br>
+              <li class="form">
+                <span class="desc"><strong>Baccalauréat</strong></span>
+                <span class="period">1983</span>
+                <li><em>Lycée de la Ville</em></li>
+              </li>
+                    </article>
+                    <article>
             <h2>Stages</h2>
-            <p>
-              Permis B, possession d’une voiture
-              <br>
-              Animateur Scout pendant 6 ans
-              <br>
-              Brevet d’animateur de Centre de Vacances
-            </p>
+            <hr>
+            <li class="form">
+              <span class="desc"><strong>Gestionnaire de paye</strong></span>
+              <span class="period">Mars 2022 - Avril 2022</span>
+              <li><em>Société Truc & Machin</em></li>
+            </li>
+            <br>
+            <li class="form">
+              <span class="desc"><strong>Agent d'accueil</strong></span>
+              <span class="period">Janvier 2021 - Février 2021</span>
+              <li><em>Mairie de la Ville</em></li>
+            </li>
     </div>
-    <div class="section">
+  </article>
+  <article>
         <h2>Expérience professionelle</h2>
-        <p>
-                <strong>2015 > 2019</strong>
-                <br>
-                <em>Agent Immobilier</em>
-              </p>
-              <p>
-                <strong>2015 > 2019</strong>
-                <br>
-                <em>Agent Immobilier</em>
-              </p>
-              <p>
-                <strong>2015 > 2019</strong>
-                <br>
-                <em>Agent Immobilier</em>
-              </p>
-      </div>
-        <div id="footer">
-           <ul>
+        <hr>
+        <li class="form">
+          <span class="desc"><strong>Agent d'accueil</strong></span>
+          <span class="period">Mars 2021 - Juillet 2021</span>
+          <li><em>Mairie de la Ville</em></li>
+        </li>
+        <br>
+        <li class="form">
+          <span class="desc"><strong>Chauffeur - Livreur</strong></span>
+          <span class="period">Septembre 2021 - Décembre 2021</span>
+          <li><em>Transport Nénés & Fils</em></li>
+        </li>
+        <li class="form">
+          <span class="desc"><strong>Préparateur de commandes</strong></span>
+          <span class="period">Janvier 2000 - Septembre 2000</span>
+          <li><em>Le slip français</em></li>
+        </li>
+          </div>   
+        </article>
+      </section>
+    </div>   
+    <footer>
+           <ul id="icones2">
             <li><img src="ASSETS/pictures/icons/linkedin.png"></li>
             <li><img src="ASSETS/pictures/icons/github.png"></li>
             <li><img src="./ASSETS/pictures/icons/insta.png"></li>
            </ul>
-         <p>Mis à jour le <time datetime="2025-02-01"></time></p>
-        </div>
-        </div>
+         <em>Mis à jour le <time datetime="2025-02-01"></time></em>
+          </footer>
    </div>
    </div>
-</div>
+  </div>
 </body>
 </html>

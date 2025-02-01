@@ -1,35 +1,106 @@
-#cvwrapper {
+#cvwrapper, footer {
     max-width: 1160px;
-    margin: 100px auto;
-    display: flexbox;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    margin: auto;
 }
 
-#partie_gauche {
+aside {
   background-color: #e3e3e3;
+  width: 250px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#partiesup, #footer {
-    background-color: #17abb3;
-    justify-content: center;
-    align-items: center;
-}
-
-#partiedroite {
+section {
     background-color: white;
+    width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+header, footer {
+    background-color: #17abb3;
 }
 
-img {
-    width: 15px;
-    height: 15px;
+header {
+    display: flexbox;
+    color: white;
+    max-height: 250px;
+    width: 1160px;
 }
 
-#footer {
+#wrap {
     display: flex;
-    
+}
+
+
+#photo img {
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: zoom-in;
+    height: 180px;
+}
+
+#photo {
+    padding-left: 50px;
+}
+
+.titres {
+    display: flex;
+    align-items: stretch;
+}
+
+#infosperso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    max-width: 800px;
+    padding-left: 220px;
+}
+
+.infos {
+    padding-right: -100px;
+}
+
+footer {
+    display: inline-flexbox;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+
+li img {
+    width: 20px;
+    height: 20px;
+}
+
+#icones2 {
+    list-style-type: none;
+    display: flexbox;
+    gap: 18px;
 }
 
 h2 {
     color: #17abb3;
 }
+
+.pgd {
+    display: flex;
+  align-items: stretch;
+}
+
+span {
+    color: #17abb3;
+}
+
+.square {
+    list-style-type: square;
+    color: #17abb3;
+    padding-left: 16px;
+}
+
+.color {
+    color: black;
+}
+
+
