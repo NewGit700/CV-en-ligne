@@ -21,64 +21,83 @@
                     </div>
                     <div id="infosperso">
                   <h1>Alex Le Grec</h1>
-                  <p><strong>Développeur Web et Web Mobile</strong></p>
-                  <ul class="infos">
-                    <li><img src="./ASSETS/pictures/icons/mail.png"><a href="mailto:alex@legrec.com">Mail</a></li>
-                    <li><img src="./ASSETS/pictures/icons/telephone-mobile.png"><a href="tel:0607080910">Téléphone</a></li>
-                    <li><img src="ASSETS/pictures/icons/maison.png"></i>Adresse</li>
-                    <li><img src="ASSETS/pictures/icons/voiture.png"></i>Permis B</li>
-                  </ul>
+                  <p id="dev">Développeur Web et Web Mobile</p>
+                  <ul>
+                  <div class="infos">
+                    <li class="one"><img src="./ASSETS/pictures/icons/mail.png"><a href="mailto:alex@legrec.com">Mail</a></li>
+                    <li class="two"><img src="./ASSETS/pictures/icons/telephone-mobile.png"><a href="tel:0607080910">Téléphone</a></li>
+                    <li class="three"><img src="ASSETS/pictures/icons/maison.png"><a href="https://maps.app.goo.gl/azPB1JSshsq1aao38" target="_blank">Adresse</a></li>
+                    <li class="four"><img src="ASSETS/pictures/icons/voiture.png"><a href="#">Permis B</a></li>
+                    </ul>
                    </div>
                 </div>
             </div>
           </header>
       <div id="wrap">
+        <body>
           <aside>
            <div id="partie_gauche">
-             <article>
+            <article>
               <h2>Compétences</h2>
-                    <div class="stars">
-                      <strong>HTML</strong>
+              <hr><br>
+              <span id="decalage2">
+                <span class="langage">HTML</span><span class="stars">&#9733&#9733&#9733&#9733&#9734</span>
+                 <br>
+                 <span class="langage">CSS</span><span class="stars">&#9733&#9733&#9733&#9733&#9734</span>
+                 <br>
+                 <span class="langage">Javascript</span><span class="stars">&#9733&#9733&#9734&#9734&#9734</span> 
+                 <br>
+                 <span class="langage">PHP</span><span class="stars">&#9733&#9734&#9734&#9734&#9734</span>
+               </span>
+               <br>
+            <!--<div class="skill">
+              <span>HTML</span><span class="stars">
                 <span>&#9733</span>
                 <span>&#9733</span>
                 <span>&#9733</span>
                 <span>&#9733</span>
                 <span>&#9734</span>
-                    </div>
-                <div class="stars">
-                  <strong>CSS</strong>
+                    </span><br>
+                    <span>CSS</span><span class="stars">
                   <span>&#9733</span>
                   <span>&#9733</span>
                   <span>&#9733</span>
                   <span>&#9733</span>
                   <span>&#9734</span>
-                      </div>
-                <div class="stars">
-                  <strong>Javascript</strong>
+                </span><br>
+                  <span>Javascript</span>
+                  <span class="stars">
                   <span>&#9733</span>
                   <span>&#9733</span>
                   <span>&#9734</span>
                   <span>&#9734</span>
                   <span>&#9734</span>
-                </div>               
-                <div class="stars">
-                  <strong>PHP</strong>
+                  </span><br>     
+                <span>PHP</span>       
+                <span class="stars">
                   <span>&#9733</span>
                   <span>&#9734</span>
                   <span>&#9734</span>
                   <span>&#9734</span>
                   <span>&#9734</span>
-                </div>
+                </span>
+              </div>-->
               </article>
-              <article>
+            <article>
                 <h2>Langues</h2>
                 <hr>
                  <p>
-                  <strong>Français</strong>   Langue maternelle
+                  <span id="decalage">
+                  <span class="lang">Français</span>
+                  <span class="level">Langue maternelle</span>
                    <br>
-                  <strong>Anglais</strong>   Professionnel
+                   <span class="lang">Anglais</span>
+                   <span class="level">Professionnel</span>   
                    <br>
-                  <strong>Espagnol</strong>   Professionnel
+                   <span class="lang">Allemand</span>
+                   <span class="level">Notions</span>  
+                  </span>
+                  <br>
                 </p>
               </article>
               <article>
@@ -104,93 +123,126 @@
                 </article>
            </div>
           </aside>
-            <section>
-              <div id="partiedroite">
+        <section>
+          <div id="partiedroite">
                <article>
                  <h2>Profil</h2>
                  <hr>
-                  <p>
+                  <p class="just">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Praesentium, illum voluptatibus culpa qui iure et enim rerum eligendi. 
+              Odit voluptate harum enim assumenda quo, quia exercitationem unde 
+              quasi adipisci ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Praesentium, illum voluptatibus culpa qui iure et enim rerum eligendi. 
               Odit voluptate harum enim assumenda quo, quia exercitationem unde 
               quasi adipisci ducimus?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Praesentium, illum voluptatibus culpa qui iure et enim rerum eligendi. 
-              Odit voluptate harum enim assumenda quo, quia exercitationem unde 
-              quasi adipisci ducimus.
                  </p>
              </article>
            <article>
             <h2>Formations</h2>
             <hr>
-            <ul>
-              <li class="form">
+            <ul class="dim">
+              <div class="fill">
+                <li class="form">
                 <span class="desc"><strong>Titre Professionnel DWWM</strong></span>
                 <span class="period">2023/2024</span>
-                <li><em>Centre Européen de Formation</em></li>
+                <br>
+                <li class="where"><em>Centre Européen de Formation</em></li>
               </li>
+            </div>
               <br>
+              <div class="fill">
               <li class="form">
                 <span class="desc"><strong>Remise à Niveau - Métiers du numérique</strong></span>
                 <span class="period">Juin 2023 - Septembre 2023</span>
-                <li><em>Lycée de la Ville</em></li>
+                <br>
+                <li class="where"><em>Lycée de la Ville</em></li>
               </li>
+            </div>
               <br>
+              <div class="fill">
               <li class="form">
                 <span class="desc"><strong>Baccalauréat</strong></span>
                 <span class="period">1983</span>
-                <li><em>Lycée de la Ville</em></li>
+                <br>
+                <li class="where"><em>Lycée de la Ville</em></li>
               </li>
+            </ul>
+            </div>
                     </article>
                     <article>
             <h2>Stages</h2>
             <hr>
+            <ul class="dim">
+            <div class="fill">
             <li class="form">
               <span class="desc"><strong>Gestionnaire de paye</strong></span>
               <span class="period">Mars 2022 - Avril 2022</span>
-              <li><em>Société Truc & Machin</em></li>
+              <br>
+              <li class="where"><em>Société Truc & Machin</em></li>
             </li>
+          </div>
             <br>
+            <div class="fill">
             <li class="form">
               <span class="desc"><strong>Agent d'accueil</strong></span>
               <span class="period">Janvier 2021 - Février 2021</span>
-              <li><em>Mairie de la Ville</em></li>
+              <br>
+              <li class="where"><em>Mairie de la Ville</em></li>
             </li>
-    </div>
+          </div>
+          </ul>   
   </article>
   <article>
         <h2>Expérience professionelle</h2>
         <hr>
+        <ul class="dim">
+        <div class="fill">
         <li class="form">
           <span class="desc"><strong>Agent d'accueil</strong></span>
           <span class="period">Mars 2021 - Juillet 2021</span>
-          <li><em>Mairie de la Ville</em></li>
+          <br>
+        <li class="where"><em>Mairie de la Ville</em></li>
         </li>
+      </div>
         <br>
+        <div class="fill">
         <li class="form">
           <span class="desc"><strong>Chauffeur - Livreur</strong></span>
           <span class="period">Septembre 2021 - Décembre 2021</span>
-          <li><em>Transport Nénés & Fils</em></li>
+          <br>
+          <li class="where"><em>Transport Nénés & Fils</em></li>
         </li>
+        </div>
+        <br>
+        <div class="fill">
         <li class="form">
           <span class="desc"><strong>Préparateur de commandes</strong></span>
           <span class="period">Janvier 2000 - Septembre 2000</span>
-          <li><em>Le slip français</em></li>
+          <br>
+          <li class="where"><em>Le slip français</em></li>
         </li>
-          </div>   
-        </article>
-      </section>
-    </div>   
+      </ul>
+        </div>  
+    </article>
+  </section>
+</div> 
+</body>
+</div>
     <footer>
-           <ul id="icones2">
+           <div id="icones2">
+            <ul>
             <li><img src="ASSETS/pictures/icons/linkedin.png"></li>
             <li><img src="ASSETS/pictures/icons/github.png"></li>
             <li><img src="./ASSETS/pictures/icons/insta.png"></li>
            </ul>
-         <em>Mis à jour le <time datetime="2025-02-01"></time></em>
+           </div>
+           <br>
+         <div id="date">Mis à jour le <time datetime="2025-02-01">JJ/MM/AAAA</time></div>
           </footer>
    </div>
    </div>
   </div>
+</div>
 </body>
 </html>
