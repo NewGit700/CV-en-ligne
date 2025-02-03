@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "Raleway";
+    src:
+      local("Raleway"),
+      url("../fonts/Raleway-Medium.ttf") format("truetype") ,
+      url("../fonts/Raleway-Medium.otf") format("opentype"),
+      url("../fonts/Raleway-Medium.woff") format("woff");
+  }
+
+  h1, h2 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  * {
+    font-family: "Lato", sans-serif;
+  }
+
 #cvwrapper, footer {
     max-width: 1160px;
     margin: auto;
@@ -30,7 +47,7 @@ header, footer {
 header {
     display: flexbox;
     color: white;
-    max-height: 250px;
+    max-height: 200px;
     width: 1160px;
 }
 
@@ -46,12 +63,12 @@ body {
     border-radius: 50%;
     border: 5px solid white;
     cursor: zoom-in;
-    height: 180px;
+    height: 150px;
 }
 
 #photo {
-    padding-left: 50px;
-    padding-top: 30px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 .titres {
@@ -69,35 +86,56 @@ body {
 }
 
 .infos {
-    padding-right: -100px;
+    display: inline-flex;
+}
+
+.infos li {
+    width: 150px;
+}
+
+.infos li a {
+    opacity: 0.7;
+    line-height: 4px;
+}
+
+.infos li img {
+    padding-right: 3px;
+    opacity: 1;
+    vertical-align:-2px;
 }
 
 footer {
     display: flex;
-    align-content: center;
+    flex-direction: column;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
     color: white;
+    padding: 10px;
 }
 
  #icones2 img {
     width: 20px;
     height: 20px;
-    color: white;
+    padding-top: 10px;
+    display: flexbox;
+    flex-direction: row;
+    vertical-align: -20px;
+    margin: 5px;
 }
 
-#icones2 li {
-    list-style-type: none;
+#date {
+   padding-top: -20px;
 }
 
 li img {
     width: 20px;
     height: 20px;
-    color: white;
 }
 
 #dev {
     margin: -10px;
+    font-weight: bold;
+    opacity: 0.9;
 }
 
 ul .infos {
@@ -148,6 +186,10 @@ div .fill:hover {
     padding-left: 5px;
 }
 
+#icones2 img:hover {
+    opacity: 0.8;
+}
+
 ul .form, ul .where, .skill {
     list-style-type: none;
 }
@@ -170,6 +212,14 @@ hr {
 
 .period, .stars {
     color: #17abb3;
+}
+
+#decalage2 {
+    display: inline-block;
+}
+
+.langage {
+    padding-right: 65px;
 }
 
 .lang {
