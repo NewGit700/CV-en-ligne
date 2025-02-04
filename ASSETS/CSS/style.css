@@ -6,7 +6,7 @@
       url("../fonts/Raleway-Medium.otf") format("opentype"),
       url("../fonts/Raleway-Medium.woff") format("woff");
   }
-
+/*  ----- FONTS -----  */
   h1, h2 {
     font-family: "Raleway", sans-serif;
   }
@@ -15,48 +15,71 @@
     font-family: "Lato", sans-serif;
   }
 
-#cvwrapper, footer {
+  /* -----  Parties  ----- */
+
+body {
     max-width: 1160px;
     margin: auto;
 }
-
-aside {
-  background-color: #e3e3e3;
-  width: 300px;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: auto;
-}
-
-section {
-    background-color: white;
-    width: 800px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    }
-
-    #partiedroite {
-        display: flexbox;
-    }
 
 header, footer {
     background-color: #17abb3;
 }
 
+header, footer  { 
+    flex: 1 100%; 
+}
+aside { 
+    flex: 1 25%;
+}
+main    { 
+    flex: 2 75%;
+}
+
 header {
-    display: flexbox;
     color: white;
     max-height: 200px;
     width: 1160px;
 }
 
-body {
-    display:flexbox;
-}
-
 #wrap {
     display: flex;
+    }
+
+aside {
+  background-color: #e3e3e3;
+  width: 300px;
+  padding-left: 30px;
+  padding-right: 15px;
+  height: auto;
+}
+
+main {
+    background-color: white;
+    width: 910px;
+    padding-left: 30px;
+    padding-right: 8px;
+    padding-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* -----  PHOTOS ET ICONES  ----- */
+.titres {
+    height: 200px;
+    display: flex;
+}
+
+#partiesup {
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 #photo img {
@@ -67,52 +90,38 @@ body {
 }
 
 #photo {
-    padding-left: 40px;
+    padding-left: 80px;
     padding-top: 20px;
+    height: 200px;
 }
 
-.titres {
-    display: flex;
-    align-items: stretch;
-}
+  #infosperso {
+    height: 200px;
+    width: 500px
+  }
 
-#infosperso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    max-width: 800px;
-    padding-left: 220px;
-    padding-bottom: 10px;
-}
+  #infosperso div img {
+    width: 20px;
+    height: 20px;
+  }
 
-.infos {
-    display: inline-flex;
-}
-
-.infos li {
-    width: 150px;
-}
-
-.infos li a {
-    opacity: 0.7;
-    line-height: 4px;
-}
-
-.infos li img {
-    padding-right: 3px;
-    opacity: 1;
-    vertical-align:-2px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #infosperso div a {
+    text-decoration: none;
     color: white;
-    padding: 10px;
-}
+    padding-left: 5px;
+  }
 
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:400px;
+    padding-left: 200px;
+  }
+  .box>* {
+    flex: 1 1 200px;
+  }
+  
  #icones2 img {
     width: 20px;
     height: 20px;
@@ -127,52 +136,35 @@ footer {
    padding-top: -20px;
 }
 
-li img {
-    width: 20px;
-    height: 20px;
-}
-
 #dev {
-    margin: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: auto;
     font-weight: bold;
     opacity: 0.9;
-}
-
-ul .infos {
-    list-style-type: none;
-}
-
-ul .infos li a {
-    text-decoration: none;
-    color: white;
-    padding-left: 5px;
-}
-
-ul .infos li {
-    padding-left: 5px;
+    padding-right: 50px;
 }
 
 h1 {
-    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    width: auto;
+    padding-right: 70px;
 }
 
 h2 {
     color: #17abb3;
 }
 
-.pgd {
-    display: flex;
-  align-items: stretch;
-}
-
-.square {
+ .square {
     list-style-type: square;
     color: #17abb3;
     padding-left: 16px;
 }
 
-.color {
-    color: black;
+.color span {
+    color:black;
 }
 
 .just {
@@ -180,7 +172,7 @@ h2 {
     text-justify: auto;
 }
 
-div .fill:hover {
+.fill .dim:hover {
     background-color: #e3e3e3;
     border-left: 3px solid #17abb3;
     padding-left: 5px;
@@ -215,16 +207,22 @@ hr {
 }
 
 #decalage2 {
-    display: inline-block;
+    display: flexbox;
+    flex-direction: row;
 }
 
 .langage {
-    padding-right: 65px;
+    padding-right: 80px;
+}
+
+.stars {
+    padding-left: 28px;
 }
 
 .lang {
     font-weight: bold;
 }
+
 
 
 

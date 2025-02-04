@@ -8,89 +8,45 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <meta description="CV signifie « curriculum vitæ » soit « déroulement de la vie » en latin. C’est un document dans lequel on explique son parcours scolaire et professionnel. On l’écrit généralement pour répondre à une offre d’emploi. Il doit faire état des compétences en rapport avec le poste visé. ">
+    <meta name="description" content="CV signifie « curriculum vitæ » soit « déroulement de la vie » en latin. C'est un document dans lequel on explique son parcours scolaire et professionnel. On l'écrit généralement pour répondre à une offre d'emploi. Il doit faire état des compétences en rapport avec le poste visé. ">
     <title>Mon CV en HTML/CSS</title>
 </head>
 <body>
-<div id="cvwrapper">
-  <header>
+    <header>
           <div id="partiesup">
-            <div class="titres">
                     <div id="photo">
-                      <img src="./ASSETS/pictures/alex.jpg">
-                    </div>
-                    <div id="infosperso">
+                      <img src="./ASSETS/pictures/alex.jpg" alt=""></div>
+                      <div class="titres">
+                      <div id="infosperso">
                   <h1>Alex Le Grec</h1>
                   <p id="dev">Développeur Web et Web Mobile</p>
-                  <ul>
-                  <div class="infos">
-                    <span>
-                    <li class="one"><img src="./ASSETS/pictures/icons/mail.png"><a href="mailto:alex@legrec.com">Mail</a></li>
-                    <li class="two"><img src="./ASSETS/pictures/icons/telephone.png"><a href="tel:0607080910">Téléphone</a></li><br>
-                  </span>
-                    <span>
-                    <li class="three"><img src="ASSETS/pictures/icons/maison.png"><a href="https://maps.app.goo.gl/azPB1JSshsq1aao38" target="_blank">Adresse</a></li>
-                    <li class="four"><img src="ASSETS/pictures/icons/voiture.png"><a href="#">Permis B</a></li>
-                  </span>
-                    </ul>
-                   </div>
+                   <div class="box">
+                     <div><img src="./ASSETS/pictures/icons/mail.png" alt="" class="one"><a href="mailto:alex@legrec.com">Mail</a></div>
+                     <div><img src="./ASSETS/pictures/icons/telephone.png" alt="" class="two"><a href="tel:0607080910">Téléphone</a></div>
+                     <div><img src="ASSETS/pictures/icons/maison.png" alt="" class="three"><a href="https://maps.app.goo.gl/azPB1JSshsq1aao38" target="_blank">Adresse</a></div>
+                     <div><img src="ASSETS/pictures/icons/voiture.png" alt="" class="four"><a href="#">Permis B</a></div>
+                  </div>
                 </div>
-            </div>
-          </header>
-      <div id="wrap">
-        <body>
-          <aside>
-           <div id="partie_gauche">
-            <article>
+          </div>
+    </header>
+        <div id="wrap">
+        <aside>
+             <div id="partie_gauche">
               <h2>Compétences</h2>
               <hr><br>
               <span id="decalage2">
-                <span class="langage"><strong>HTML</strong></span><span class="stars">&#9733&#9733&#9733&#9733&#9734</span>
+                <span class="langage"><strong class="HCJP">HTML</strong></span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                 <br>
-                 <span class="langage"><strong>CSS</strong></span><span class="stars">&#9733&#9733&#9733&#9733&#9734</span>
+                 <span class="langage"><strong class="HCJP">CSS</strong></span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                  <br>
-                 <span class="langage"><strong>Javascript</strong></span><span class="stars">&#9733&#9733&#9734&#9734&#9734</span>
+                 <span class="langage"><strong class="HCJP">Javascript</strong></span><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
                  <br>
-                 <span class="langage"><strong>PHP</strong></span><span class="stars">&#9733&#9734&#9734&#9734&#9734</span>
+                 <span class="langage"><strong class="HCJP">PHP</strong></span><span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span>
                 </span>
                 <br>
-            <!--<div class="skill">
-              <span>HTML</span><span class="stars">
-                <span>&#9733</span>
-                <span>&#9733</span>
-                <span>&#9733</span>
-                <span>&#9733</span>
-                <span>&#9734</span>
-                    </span><br>
-                    <span>CSS</span><span class="stars">
-                  <span>&#9733</span>
-                  <span>&#9733</span>
-                  <span>&#9733</span>
-                  <span>&#9733</span>
-                  <span>&#9734</span>
-                </span><br>
-                  <span>Javascript</span>
-                  <span class="stars">
-                  <span>&#9733</span>
-                  <span>&#9733</span>
-                  <span>&#9734</span>
-                  <span>&#9734</span>
-                  <span>&#9734</span>
-                  </span><br>     
-                <span>PHP</span>       
-                <span class="stars">
-                  <span>&#9733</span>
-                  <span>&#9734</span>
-                  <span>&#9734</span>
-                  <span>&#9734</span>
-                  <span>&#9734</span>
-                </span>
-              </div>-->
-              </article>
-            <article>
                 <h2>Langues</h2>
                 <hr>
-                 <p>
+                <br>
                   <span id="decalage">
                   <span class="lang">Français</span>
                   <span class="level">Langue maternelle</span>
@@ -102,147 +58,125 @@
                    <span class="level">Professionnel</span>  
                   </span>
                   <br>
-                </p>
-              </article>
-              <article>
                <h2>Qualités</h2>
                <hr>
                <div class="align">
                 <ul class="square">
-                  <li><span class="color">Esprit d'équipe</span></li>
-                  <li><span class="color">Autonomie</span></li>
-                  <li><span class="color">Organisation</span></li>
-                  <li><span class="color">Créativité</span></li>
+                  <li class="color"><span>Esprit d'équipe</span></li>
+                  <li class="color"><span>Autonomie</span></li>
+                  <li class="color"><span>Organisation</span></li>
+                  <li class="color"><span>Créativité</span></li>
+                  </ul>
                 </div>
-                </article>
-                <article>
                <h2>Centres d'intérêt</h2>
                <hr>
               <div class="align">
                 <ul class="square">
-                 <li><span class="color">Randonnée</span></li>
-                 <li><span class="color">Tennis</span></li>
-                 <li><span class="color">Ecologie</span></li>
+                 <li class="color"><span>Randonnée</span></li>
+                 <li class="color"><span>Tennis</span></li>
+                 <li class="color"><span>Ecologie</span></li>
+                 </ul>
               </div>
-                </article>
-           </div>
-          </aside>
-        <section>
-          <div id="partiedroite">
-               <article>
-                 <h2>Profil</h2>
+          </div>
+        </aside>
+      <main>
+              <h2>Profil</h2>
                  <hr>
                   <p class="just">
               Après plus de quinze années d'expérience dans l'immobilier il était temps pour moi de découvrir
-              d'autres horizons. La programmation m'a toujours intéressé, il s'agissait d'un hobby en parallèle 
+              d'autres horizons. La programmation m'a toujours intéressée, il s'agissait d'un hobby en parallèle 
               du travail. Dans le cadre d'une reconversion professionelle je pense que concilier hobby
               et activité professionnelle mènera à la quête du Graal.
                  </p>
-             </article>
-           <article>
             <h2>Formations</h2>
             <hr>
-            <ul class="dim">
-              <div class="fill">
-                <li class="form">
+            <div class="fill">
+             <ul class="dim">
+                <li class="form"><!-- Prochaine fois utiliser <dl> -->
                 <span class="desc"><strong>Titre Professionnel DWWM</strong></span>
                 <span class="period">2024/2025</span>
                 <br>
                 <li class="where"><em>Centre Européen de Formation</em></li>
-              </li>
+              </ul>
             </div>
-              <br>
-              <div class="fill">
+            <div class="fill">
+             <ul class="dim">
               <li class="form">
                 <span class="desc"><strong>Maîtrise Commerce International</strong></span>
                 <span class="period">Septembre 2000 - Juillet 2002</span>
                 <br>
                 <li class="where"><em>Ecole de commerce Bordeaux</em></li>
-              </li>
+              </ul>
             </div>
-              <br>
-              <div class="fill">
+            <div class="fill">
+              <ul class="dim">
               <li class="form">
                 <span class="desc"><strong>Licence LEA</strong></span>
                 <span class="period">2000</span>
                 <br>
                 <li class="where"><em>Faculté de Poitiers</em></li>
-              </li>
             </ul>
-            </div>
-                    </article>
-                    <article>
+          </div>
             <h2>Stages</h2>
             <hr>
-            <ul class="dim">
             <div class="fill">
+            <ul class="dim">
             <li class="form">
               <span class="desc"><strong>Gestionnaire de paye</strong></span>
               <span class="period">Mars 2022 - Avril 2022</span>
               <br>
               <li class="where"><em>Société Truc & Machin</em></li>
-            </li>
+            </ul>
           </div>
-            <br>
-            <div class="fill">
+          <div class="fill">
+            <ul class="dim">
             <li class="form">
               <span class="desc"><strong>Agent d'accueil</strong></span>
               <span class="period">Janvier 2021 - Février 2021</span>
               <br>
               <li class="where"><em>Mairie de la Ville</em></li>
-            </li>
-          </div>
-          </ul>   
-  </article>
-  <article>
-        <h2>Expérience professionelle</h2>
-        <hr>
-        <ul class="dim">
+           </ul>   
+         </div>
+          <h2>Expérience professionelle</h2>
+          <hr>
+         <div class="fill">
+          <ul class="dim">
+           <li class="form">
+            <span class="desc"><strong>Agent immobilier</strong></span>
+            <span class="period">Avril 2008 - Août 2024</span>
+           <br>
+           <li class="where"><em>Agence 2000 Immobilier</em></li>
+         </ul>
+         </div>
         <div class="fill">
-        <li class="form">
-          <span class="desc"><strong>Agent immobilier</strong></span>
-          <span class="period">Avril 2008 - Août 2024</span>
-          <br>
-        <li class="where"><em>Agence 2000 Immobilier</em></li>
-        </li>
-      </div>
-        <br>
-        <div class="fill">
-        <li class="form">
-          <span class="desc"><strong>Technico-commercial</strong></span>
-          <span class="period">Avril 2004 - Février 2008</span>
-          <br>
-          <li class="where"><em>Timocom GmBh</em></li>
-        </li>
+          <ul class="dim">
+           <li class="form">
+            <span class="desc"><strong>Technico-commercial</strong></span>
+            <span class="period">Avril 2004 - Février 2008</span>
+           <br>
+           <li class="where"><em>Timocom GmBh</em></li>
+          </ul>
         </div>
-        <br>
-        <div class="fill">
-        <li class="form">
-          <span class="desc"><strong>Assistant commercial export</strong></span>
-          <span class="period">Octobre 2002 - Février 2004</span>
-          <br>
-          <li class="where"><em>Farne Salmon & Trout</em></li>
-        </li>
-      </ul>
-        </div>  
-    </article>
-  </section>
-</div> 
-</body>
-</div>
-    <footer>
+          <div class="fill">
+            <ul class="dim">
+            <li class="form">
+               <span class="desc"><strong>Assistant commercial export</strong></span>
+               <span class="period">Octobre 2002 - Février 2004</span>
+               <br>
+               <li class="where"><em>Farne Salmon & Trout</em></li>
+              </ul>
+          </div>
+     </main> 
+    </div>
+      <footer>
            <div id="icones2">
-            <a href="https://fr.linkedin.com/in/alexandre-sideratos-9309a148" target="_blank"><img src="ASSETS/pictures/icons/linkedin.png"></a>
-            <a href="https://github.com/NewGit700" target="_blank"><img src="ASSETS/pictures/icons/github.png"></a>
-            <a href="https://www.instagram.com/jeanlassalleoff/?hl=fr" target="_blank"><img src="./ASSETS/pictures/icons/insta.png"></a>
+            <a href="https://fr.linkedin.com/in/alexandre-sideratos-9309a148" target="_blank"><img src="ASSETS/pictures/icons/linkedin.png" alt=""></a>
+            <a href="https://github.com/NewGit700" target="_blank"><img src="ASSETS/pictures/icons/github.png" alt=""></a>
+            <a href="https://www.instagram.com/jeanlassalleoff/?hl=fr" target="_blank"><img src="./ASSETS/pictures/icons/insta.png" alt=""></a>
            </div>
-         <p id="date">
-          Mis à jour le <time datetime="2025-02-01">JJ/MM/AAAA</time>
-         </p>
-          </footer>
-   </div>
-   </div>
-  </div>
-</div>
-</body>
+          <p id="date">
+          Mis à jour le <time datetime="2025-02-03">03/02/2025</time>
+          </p>
+      </footer>
+ </body>
 </html>
